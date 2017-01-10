@@ -18,19 +18,69 @@ namespace datatypes
             //return a string of these stings joined with a space  between them make sure it is public
             // call JoinStrings with your first and last name
 
-
+            string myForename = "John";
+            string mySurname = "Barrowman";
+            string myFullName = JoinStrings (myForename, mySurname);
 
             // create a method  called  Arthimetic which takes in two  numbers and returns a result  of a  mathematical
-            //function which is also sent a a single character the result sould be  printed  to the console
+            //function which is also sent as a single character the result sould be  printed  to the console
             // call  arithmetic with an example of each type of calculation
 
-            //Create a method called WriteStringArray which writes the contents of an array to the colsole.
+            int firstNumber = 24;
+            int secondNumber = 36;
+            Arithmetic(firstNumber, secondNumber "+");
+
+            //Create a method called WriteStringArray which writes the contents of an array to the console.
             // call WriteStringArray with an array containign 3 strings
+
+
+            
+        }
+
+        public static string JoinStrings(string Forename, string Surname)
+        {
+
+            string myString = Forename + " " + Surname;
+            Console.Write(myString);
+            return myString;
+
+        }
+        public static int Arthimetic(int number1, int number2, string oper)
+        {
+             
+
+                int result = 0;
+                
+                if (oper == "+")
+                { 
+                
+                result = number1 + number2;
+            
+                }
+                else if (oper == "-")
+                {
+                    result = number1 - number2;
+
+                }
+                else if (oper == "/")
+                {
+                    result = number1 / number2;
+
+                }
+                else if (oper == "*")
+                {
+                    result = number1 * number2;
+
+                }
+            }
 
 
 
         }
 
 
-    }
-}
+      }
+
+    
+
+
